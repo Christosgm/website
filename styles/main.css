@@ -14,11 +14,16 @@ h2,h3 {
 	align-self: center;
 }
 
-header{
-	display: inherit;
+.head, header {
+	display: flex;
+	flex-flow: row nowrap;
 	align-items: center;
 }
-img {
+
+header > img {
+	margin: 0 100px;
+}
+#logo {
 	width: 180px;
 	height: 150px;
 	padding: 10px;
