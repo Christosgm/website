@@ -48,8 +48,9 @@ a {
 	padding: 20px;
 }
 main > div {
-	display: inherit;
+	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .list {
 	display: flex;
