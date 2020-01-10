@@ -15,3 +15,5 @@ next.addEventListener('click',function(e) {
 prev.addEventListener('click',function(e) {
     alert('Oops doesn\'t work');
 });
+
+

@@ -86,6 +86,3 @@ a > img {
 #next, #prev {
 	z-index: 5;
 }
-#next:hover, #prev:hover {
-	height: 100px;
-}
