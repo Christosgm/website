@@ -5,15 +5,16 @@ const pages = document.querySelectorAll('.page');
 var i = 0;
 var l = pages.length;
 
-next.addEventListener('click',function(e) {
-    pages[i].classList.remove('fg');
+next.addEventListener('click', nextPage);
+prev.addEventListener('click',prevPage);
+
+function nextPage() {
     pages[i].classList.add('bg');
     i=++i%l;
     pages[i].classList.remove('bg');
-    pages[i].classList.add('fg');
-});
-prev.addEventListener('click',function(e) {
-    alert('Oops doesn\'t work');
-});
-
-
+}
+function prevPage() {
+    pages[i].classList.add('bg');
+    i=(i+l-1)%l;
+    pages[i].classList.remove('bg');
+}
